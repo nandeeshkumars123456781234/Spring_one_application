@@ -30,13 +30,4 @@ public class Student {
 	private Double age;
 	private String email;
 	
-//	@OneToMany(targetEntity = Courses.class,cascade = CascadeType.ALL)
-//    @JoinColumn(name ="student_course_detail_id",referencedColumnName = "id")
-	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "Student_Course_Table",
-	         joinColumns = {
-	        		 
-	         })
-	private List<Courses> coursesList;
-	
 }
