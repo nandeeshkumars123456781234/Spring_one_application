@@ -20,8 +20,4 @@ public class Courses {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long courseId;
 	private String courseName;
-	
-	@ManyToMany
-	@JoinColumn
-	privaie List<St>
 }
